@@ -1,4 +1,6 @@
 import { createStore } from 'vuex'
+import oauth from './modules/oauth'
+import loading from './modules/loading'
 
 export default createStore({
   state: {
@@ -10,5 +12,7 @@ export default createStore({
   actions: {
   },
   modules: {
+    oauth,
+    loading
   }
 })
